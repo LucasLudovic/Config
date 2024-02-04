@@ -1,0 +1,26 @@
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+}
+
+#network, #cpu, #memory, #pulseaudio, #battery, #tray {
+    padding: 0 3px;
+    margin: 0 8px;
+}
+
+#workspaces {
+    padding: 0px 10px;
+    background-color: #222222;
+    border-radius: 26px;
+}
+
+#workspaces button {
+    margin: 0px;
+    padding: 0px;
+}
+
+#custom-explorer {
+    padding: 0 3px;
+    margin: 0 6px;
+    font-size: 12px;
+}
