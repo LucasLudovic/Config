@@ -12,6 +12,7 @@ return {
 
 
       lsp.lua_ls.setup({})
+      lsp.tsserver.setup({})
       lsp.clangd.setup({
         cmd = {
           'clangd',
