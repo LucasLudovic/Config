@@ -41,3 +41,4 @@ vim.keymap.set("n", "<A-j>", "<C-\\><C-N><C-w>j", { desc = 'move down in normal 
 vim.keymap.set("n", "<A-k>", "<C-\\><C-N><C-w>k", { desc = 'move up in normal mode' })
 vim.keymap.set("n", "<A-l>", "<C-\\><C-N><C-w>l", { desc = 'move right in normal mode' })
 
+-- Telescope Keybind

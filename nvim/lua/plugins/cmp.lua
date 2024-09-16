@@ -30,8 +30,8 @@ return {
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
       }),
       sources = {
-        { name = 'copilot' },
         { name = 'path' },
+        { name = 'copilot' },
         { name = 'luasnip' },
         { name = 'nvim_lsp' },
         { name = 'nvim_lua' },
