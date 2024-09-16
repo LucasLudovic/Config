@@ -10,7 +10,7 @@ return {
       local lsp = require('lspconfig')
       local configs = require('lspconfig.configs')
 
-
+    -- Langage Servers for autocomplete
       lsp.lua_ls.setup({})
       lsp.ts_ls.setup({})
       lsp.clangd.setup({
