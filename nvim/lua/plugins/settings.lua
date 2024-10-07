@@ -23,17 +23,9 @@ return {
             "MunifTanjim/nui.nvim",
         }
     },
-    {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        opts = {}
-    },
-    {
-        "williamboman/mason.nvim"
-    },
-    {
-        "nvim-lua/plenary.nvim"
-    },
+    { 'windwp/nvim-autopairs',  event = "InsertEnter", opts = {} },
+    { "williamboman/mason.nvim" },
+    { "nvim-lua/plenary.nvim" },
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
@@ -46,9 +38,6 @@ return {
                 indent = { enable = true },
             })
         end,
-    },
-    {
-        "airblade/vim-gitgutter"
     },
     {
         "stevearc/conform.nvim",
