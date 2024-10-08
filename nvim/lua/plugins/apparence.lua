@@ -2,6 +2,12 @@ local vim = vim
 local opts = { noremap = true, silent = true }
 
 return {
+    -- Design for the neotree
+    { "MunifTanjim/nui.nvim" },
+    -- Web icons for neotree
+    { "nvim-tree/nvim-web-devicons" },
+
+    -- Change the tab look
     {
         'romgrk/barbar.nvim',
         dependencies = {

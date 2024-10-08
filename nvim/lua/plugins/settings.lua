@@ -14,15 +14,6 @@ return {
             -- refer to the configuration section below
         }
     },
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons",
-            "MunifTanjim/nui.nvim",
-        }
-    },
     { 'windwp/nvim-autopairs',  event = "InsertEnter", opts = {} },
     { "williamboman/mason.nvim" },
     { "nvim-lua/plenary.nvim" },
