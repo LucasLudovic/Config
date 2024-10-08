@@ -34,6 +34,8 @@ return {
             vim.keymap.set('n', '<A-8>', '<Cmd>BufferGoto 8<CR>', opts),
             vim.keymap.set('n', '<A-9>', '<Cmd>BufferGoto 9<CR>', opts),
             vim.keymap.set('n', '<A-0>', '<Cmd>BufferLast<CR>', opts),
+            -- Close buffer
+            vim.keymap.set('n', '<A-q>', '<Cmd>BufferClose<CR>', opts)
         },
     },
 }
