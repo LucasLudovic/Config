@@ -77,7 +77,7 @@ return {
         dependencies = {
             "nvim-lua/plenary.nvim",
 
-            -- Only one of these is needed.
+            -- Optionals
             "sindrets/diffview.nvim",
             "nvim-telescope/telescope.nvim",
         },
