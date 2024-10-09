@@ -22,7 +22,7 @@ return {
         build = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
-                ensure_installed = { "lua", "vim", "vimdoc", "query" },
+                ensure_installed = { "lua", "vim", "vimdoc", "query", "c", "cpp" },
                 sync_install = false,
                 auto_install = true,
                 highlight = { enable = true },
@@ -51,11 +51,14 @@ return {
                     graphql = { "prettier" },
                     lua = { "stylua" },
                     python = { "isort", "black" },
+                    c = { "clang-format" },
+                    cpp = { "clang-format" },
                 },
                 format_on_save = {
                     lsp_fallback = true,
                     async = false,
                     timeout_ms = 500,
+                    -- excluded filetypes
                 },
             })
 

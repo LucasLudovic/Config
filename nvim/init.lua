@@ -30,7 +30,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.autoindent = true
-vim.softtabstop = 1
+vim.softtabstop = 4
 
 -- line number
 vim.opt.number = true

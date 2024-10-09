@@ -6,7 +6,14 @@ return {
     { "MunifTanjim/nui.nvim" },
     -- Web icons for neotree
     { "nvim-tree/nvim-web-devicons" },
-
+    -- Bottom info line
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { 'nvim-tree/nvim-web-devicons', opt = true },
+        config = function()
+            require('lualine').setup()
+        end
+    },
     -- Change the tab look
     {
         'romgrk/barbar.nvim',
