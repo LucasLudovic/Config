@@ -26,6 +26,25 @@ return {
                     duration = 200,
                     delay = 300,
                 },
+                indent = {
+                    enable = true,
+                    priority = 10,
+                    style = {
+                        vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui"),
+                    },
+                    use_treesitter = false,
+                    chars = {
+                        "│",
+                        "¦",
+                        "┆",
+                    },
+                    ahead_lines = 1,
+                    delay = 100,
+                },
+                line_num = {
+                    enable = true,
+                    style = "#806d9c",
+                },
             })
         end
     },
