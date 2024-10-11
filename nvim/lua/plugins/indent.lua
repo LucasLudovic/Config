@@ -1,5 +1,18 @@
 return {
     {
+        "SmiteshP/nvim-navic",
+        dependencies = {
+            "neovim/nvim-lspconfig",
+        },
+        config = function()
+            local navic = require('nvim-navic')
+
+            navic.setup {
+                highlight = true, -- Active les highlights dans la barre de navigation
+            }
+        end
+    },
+    {
         "shellRaining/hlchunk.nvim",
         event = { "BufReadPre", "BufNewFile" },
         config = function()
