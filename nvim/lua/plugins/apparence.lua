@@ -2,17 +2,6 @@ local vim = vim
 local opts = { noremap = true, silent = true }
 
 return {
-    -- Change the UI for message, cmd and popup
-    {
-        "folke/noice.nvim",
-        event = "VeryLazy",
-        opts = {
-        },
-        dependencies = {
-            "MunifTanjim/nui.nvim",
-            "rcarriga/nvim-notify",
-        }
-    },
     -- Design for the neotree
     { "MunifTanjim/nui.nvim" },
     -- Web icons for neotree
