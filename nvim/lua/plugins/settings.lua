@@ -1,5 +1,4 @@
 return {
-    { "catppuccin/nvim",   name = "catppuccin", priority = 1000 },
     { "drawbu/vim-epitech" },
     {
         "folke/which-key.nvim",

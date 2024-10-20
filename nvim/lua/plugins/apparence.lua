@@ -2,6 +2,7 @@ local vim = vim
 local opts = { noremap = true, silent = true }
 
 return {
+    { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
     -- Design for the neotree
     { "MunifTanjim/nui.nvim" },
     -- Web icons for neotree

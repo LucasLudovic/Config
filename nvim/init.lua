@@ -17,14 +17,19 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('plugins')
 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "kanagawa"
 
 -- color theme
-vim.cmd [[colorscheme catppuccin]]
+vim.cmd [[colorscheme kanagawa]]
 
 -- Tab Command Shortcut
 vim.keymap.set("n", "<A-t>n", ":tabnew<CR>", { noremap = true, silent = true, desc = "open new tab" })
 vim.keymap.set("n", "<A-t>q", ":tabclose<CR>", { noremap = true, silent = true, desc = "close current tab" })
+
+-- Fold
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99
 
 -- tab & indentation
 vim.opt.tabstop = 4
