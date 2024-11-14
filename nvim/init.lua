@@ -57,3 +57,5 @@ vim.keymap.set("n", "<C-t>l", ":Telescope live_grep<CR>",
     { noremap = true, silent = true, desc = 'open live grep with Telescope' })
 vim.keymap.set("n", "<C-t>f", ":Telescope find_files<CR>",
     { noremap = true, silent = true, desc = 'open file search with Telescope' })
+vim.keymap.set("n", "<C-t>b", ":Telescope buffers<CR>",
+    { noremap = true, silent = true, desc = 'show open buffers with Telescope' })
