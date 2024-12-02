@@ -17,10 +17,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('plugins')
 
-vim.cmd.colorscheme "kanagawa"
+vim.cmd.colorscheme "nightfly"
+
+-- nvim config
+vim.opt.modeline = false
 
 -- color theme
-vim.cmd [[colorscheme kanagawa]]
+vim.cmd [[colorscheme nightfly]]
 
 -- Tab Command Shortcut
 vim.keymap.set("n", "<A-t>n", ":tabnew<CR>", { noremap = true, silent = true, desc = "open new tab" })
