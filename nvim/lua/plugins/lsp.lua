@@ -11,8 +11,14 @@ return {
             local configs = require('lspconfig.configs')
 
             -- Langage Servers for autocomplete
+
+            -- Lua
             lsp.lua_ls.setup({})
+
+            -- TypeScript
             lsp.ts_ls.setup({})
+
+            -- C/C++
             lsp.clangd.setup({
                 cmd = {
                     'clangd',
@@ -22,7 +28,20 @@ return {
                     '--cross-file-rename',
                 },
             })
+
+            -- Python
             lsp.pyright.setup({})
+
+            -- Rust
+            lsp.rust_analyzer.setup({
+                settings = {
+                    ['rust-analyzer'] = {
+                        checkOnSave = {
+                            command = 'clippy',
+                        },
+                    },
+                },
+            })
 
             lsp_zero.on_attach(function(_, bufnr)
                 local opts = { buffer = bufnr, remap = false }
