@@ -54,15 +54,15 @@ return {
                     cpp = { "clang-format" },
                     rust = { "rustfmt" },
                 },
-                format_on_save = {
-                    lsp_fallback = true,
-                    async = false,
-                    timeout_ms = 500,
-                    -- excluded filetypes
-                },
+                -- format_on_save = {
+                --     lsp_fallback = true,
+                --     async = false,
+                --     timeout_ms = 500,
+                --     -- excluded filetypes
+                -- },
             })
 
-            vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+            vim.keymap.set({ "n", "v" }, "<leader>md", function()
                 conform.format({
                     lsp_fallback = true,
                     async = false,
