@@ -4,6 +4,7 @@ return {
         branch = 'v2.x',
         dependencies = {
             { 'neovim/nvim-lspconfig' },
+            t
         },
         config = function()
             local lsp_zero = require('lsp-zero').preset({})
@@ -28,7 +29,6 @@ return {
                     '--cross-file-rename',
                 },
             })
-
             -- Python
             lsp.pyright.setup({})
 
@@ -41,6 +41,13 @@ return {
                         },
                     },
                 },
+            })
+
+            -- Go
+            lsp.gopls.setup({})
+
+            -- Haskel
+            lsp.hls.setup({
             })
 
             lsp_zero.on_attach(function(_, bufnr)
