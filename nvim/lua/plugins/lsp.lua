@@ -1,3 +1,5 @@
+vim.env.MASON_PYTHON = "python3.11"
+
 return {
     {
         'VonHeikemen/lsp-zero.nvim',
@@ -18,6 +20,9 @@ return {
 
             -- TypeScript
             lsp.ts_ls.setup({})
+
+            -- CMake
+            lsp.cmake.setup({})
 
             -- C/C++
             lsp.clangd.setup({
