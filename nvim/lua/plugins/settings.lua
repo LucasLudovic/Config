@@ -49,9 +49,9 @@ return {
                     markdown = { "prettier" },
                     graphql = { "prettier" },
                     lua = { "stylua" },
-                    python = { "isort", "black" },
                     c = { "clang-format" },
                     cpp = { "clang-format" },
+                    python = { "black" },
                     rust = { "rustfmt" },
                 },
                 -- format_on_save = {

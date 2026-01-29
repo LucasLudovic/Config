@@ -37,6 +37,8 @@ return {
             -- Python
             lsp.pyright.setup({})
 
+            lsp.ruff.setup({})
+
             -- Rust
             lsp.rust_analyzer.setup({
                 settings = {
