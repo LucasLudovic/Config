@@ -9,6 +9,7 @@ return {
         'tamago324/cmp-zsh',
         'hrsh7th/cmp-nvim-lua',
         'SergioRibera/cmp-dotenv',
+        "kdheepak/cmp-latex-symbols",
 
         -- LuaSnip
         'L3MON4D3/LuaSnip',
@@ -49,6 +50,7 @@ return {
                 { name = 'nvim_lsp' },
                 { name = 'nvim_lua' },
                 { name = 'dotenv' },
+                { name = 'latex_symbols' },
             },
             formatting = {
                 fields = { 'kind', 'abbr', 'menu' },

@@ -6,7 +6,6 @@ return {
         branch = 'v2.x',
         dependencies = {
             { 'neovim/nvim-lspconfig' },
-            t
         },
         config = function()
             local lsp_zero = require('lsp-zero').preset({})
@@ -55,6 +54,25 @@ return {
 
             -- Haskel
             lsp.hls.setup({
+            })
+
+            -- Latex
+            lsp.texlab.setup({
+                settings = {
+                    texlab = {
+                        auxDirectory = "build",
+                        build = {
+                            executable = "latexmk",
+                            args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-outdir=build", "%f" },
+                            onSave = false,
+                            forwardSearchAfter = true,
+                        },
+                        forwardSearch = {
+                            executable = "zathura",
+                            args = { "--synctex-forward", "%l:1:%f", "%p" },
+                        },
+                    },
+                },
             })
 
             lsp_zero.on_attach(function(_, bufnr)
