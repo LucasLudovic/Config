@@ -49,17 +49,17 @@ return {
                     markdown = { "prettier" },
                     graphql = { "prettier" },
                     lua = { "stylua" },
-                    c = { "clang-format" },
-                    cpp = { "clang-format" },
+                    c = { "uncrustify" },
+                    cpp = { "uncrustify" },
                     python = { "black" },
                     rust = { "rustfmt" },
                 },
-                -- format_on_save = {
-                --     lsp_fallback = true,
-                --     async = false,
-                --     timeout_ms = 500,
-                --     -- excluded filetypes
-                -- },
+                format_on_save = {
+                    lsp_fallback = true,
+                    async = false,
+                    timeout_ms = 500,
+                    -- excluded filetypes
+                },
             })
 
             vim.keymap.set({ "n", "v" }, "<leader>md", function()
